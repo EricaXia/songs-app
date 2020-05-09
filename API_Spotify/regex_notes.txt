@@ -1,0 +1,4 @@
+By Python definition '\W == [^a-zA-Z0-9_] <- match NON ALPHA NUMERIC chars
+
+The ^ character means o match a single character NOT present in the set (inverse)
+

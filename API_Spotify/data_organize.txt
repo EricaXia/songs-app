@@ -1,0 +1,44 @@
+Three Spotify data tables & features to grab:
+
+1. Track
+-----
+- name
+- id
+- popularity
+- album {
+    - artists {
+        - name
+        - id
+    }
+    - name
+    - id
+    -release_date
+}
+
+
+2. Artist
+-----
+- id
+- name
+- genres []
+- followers {
+    - total
+}
+- popularity
+
+3. Audio features
+-----
+-  "danceability"
+-  "energy"
+-  "key"
+-  "loudness"
+-  "mode"
+-  "speechiness"
+-  "acousticness"
+-  "instrumentalness"
+-  "liveness"
+-  "valence"
+-  "tempo"
+-  "id":
+-  "duration_ms"
+-  "time_signature"
