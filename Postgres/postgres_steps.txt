@@ -1,2 +1,0 @@
-1. Make a new database (using `createdb` cmd or pgadmin)
-2. postgres_text.py uses psycopg2 library to connect to Postgres db and create new table
