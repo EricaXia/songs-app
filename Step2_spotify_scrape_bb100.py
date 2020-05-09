@@ -6,7 +6,6 @@ import re
 import numpy as np
 import pandas as pd
 import json
-import sqlalchemy
 import pickle
 
 # find all csv files stored in 'data' folder
@@ -75,7 +74,7 @@ for file in csv_files:
         searched_track_id = search_response_dict['tracks']['items'][0]['id']
 
         track_id = searched_track_id
-        
+
         # add to Spotify id list (to link with Genius data later)
         song_fname = re.sub('[^a-zA-Z0-9_]+', '', song)
         spotify_ids.append((song, song_fname, track_id))
