@@ -6,6 +6,8 @@ import sqlite3
 import os
 from glob import glob
 
+print("Adding Spotify data to SQLite3 database...")
+
 conn = sqlite3.connect('music.db')
 c = conn.cursor()
 
