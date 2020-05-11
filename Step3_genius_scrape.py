@@ -88,7 +88,7 @@ for file in csv_files:
         page = requests.get(lyrics_url)
         html = BeautifulSoup(page.text, "html.parser")
         lyrics = html.find("div", class_="lyrics").get_text()
-        print(f"Downloaded lyrics for {song}")
+        print(f"Downloaded lyrics for: {song}")
 
         # Write the song's lyrics to a text file
 
