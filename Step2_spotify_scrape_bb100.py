@@ -114,7 +114,7 @@ for file in csv_files:
 
         artist_response_dict = artist_response.json()
 
-        print(f"downloaded files for: {song}")
+        print(f"Downloaded metadata for: {song}")
 
         fname = re.sub('[\W_]+', '', song)  # extract only alphanumeric chars
         fname1 = fname.replace(' ', '')
