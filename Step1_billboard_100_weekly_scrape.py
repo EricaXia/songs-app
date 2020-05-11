@@ -18,6 +18,11 @@ today = datetime.datetime.today()
 d_list = [today - datetime.timedelta(weeks=x) for x in range(numweeks)]
 dates = [d.strftime('%Y-%m-%d') for d in d_list]
 
+print("Downloading Billboard Top 100 for weeks:")
+for date in dates:
+    print(date, end=" ")
+print("\n")
+
 # Loop over each week and download the top 100 songs' data
 for d in dates:
 
