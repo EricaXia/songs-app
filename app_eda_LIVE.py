@@ -15,15 +15,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-# Data Extraction: Run steps 1-4 scripts
-exec(open('Step1_billboard_100_weekly_scrape.py').read())
-exec(open('Step2_spotify_scrape_bb100.py').read())
-exec(open('Step3_genius_scrape.py').read())
-exec(open('Step4_sqlite.py').read())
-
-print ("Starting app...")
-
-
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
@@ -279,4 +270,11 @@ def update_output(value):
 
 
 if __name__ == '__main__':
+    # Data Extraction: Run steps 1-4 scripts
+    exec(open('Step1_billboard_100_weekly_scrape.py').read())
+    exec(open('Step2_spotify_scrape_bb100.py').read())
+    exec(open('Step3_genius_scrape.py').read())
+    exec(open('Step4_sqlite.py').read())
+    # Launch app once data is extracted
+    print ("Starting app...")
     app.run_server(debug=True)
