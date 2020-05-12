@@ -14,8 +14,11 @@ base_url = 'https://www.billboard.com/charts/hot-100/'
 # can change the number of weeks as desired
 numweeks = 4
 today = datetime.datetime.today()
+idx = (today.weekday() + 1) % 7  # where MON = 0, SUN = 6 -> SUN = 0 .. SAT = 6
+# start from last Sunday to calculate dates
+last_Sun = today - datetime.timedelta(7 + idx)
 # get list of dates of the past n weeks
-d_list = [today - datetime.timedelta(weeks=x) for x in range(numweeks)]
+d_list = [last_Sun - datetime.timedelta(weeks=x) for x in range(numweeks)]
 dates = [d.strftime('%Y-%m-%d') for d in d_list]
 
 print("Downloading Billboard Top 100 for weeks:")
