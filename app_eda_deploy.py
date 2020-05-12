@@ -18,7 +18,7 @@ from plotly.subplots import make_subplots
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server  # deployment
 # FETCH DATA-----
 # connect to music sqlite3 database
 conn = sqlite3.connect('music.db')
