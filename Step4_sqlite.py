@@ -7,6 +7,8 @@ import os
 from glob import glob
 import pickle
 import dask.dataframe as dd
+from pathlib import PurePath
+
 
 # Add all Spotify data to db  ---------
 print("Adding Spotify data to SQLite3 database...")
@@ -225,9 +227,7 @@ lyric_txts = [file
 lyrics_dict = {}
 
 for fname in lyric_txts:
-    fname_spl = fname.split('.txt')[0]
-    fname_spl2 = fname_spl.split('\\')
-    song = fname_spl2[1]
+    song = PurePath(fname).parts[2].split('.txt')[0]
 
     with open(fname, 'r', encoding='utf8') as f:
         lyrics_dict[song] = f.read()
