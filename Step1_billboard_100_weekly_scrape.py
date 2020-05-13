@@ -96,6 +96,6 @@ for d in dates:
     songs_df.fillna(0, inplace=True)
 
     # export to CSV & save in data folder
-    path = rf"data\{d}_billboard_100.csv"
+    path = rf"data/{d}_billboard_100.csv"
     songs_df.to_csv(path, index=None)
     print(f"Saved week {d} to CSV")
