@@ -26,8 +26,12 @@ for file in csv_files:
     df_bb100 = pd.read_csv(file)
 
     # inner loop for each song in 'Song' column of df
-    for song in df_bb100['Song']:
+    unique_songs0 = []
+    for s in df_bb100['Song']:
+        unique_songs0.append(s)
+    unique_songs = list(set(unique_songs0))   # avoid duplicate dls
 
+    for song in unique_songs:
         # Begin Spotify scrape
         client_id = 'f7e5487237a44720bc3fe1b2afc641ce'
         client_secret = 'b9c005c1698e4655aad6000750267140'

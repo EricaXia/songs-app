@@ -65,9 +65,13 @@ csv_files = [file
 for file in csv_files:
 
     df_bb100 = pd.read_csv(file)
+    unique_songs0 = []
+    for s in df_bb100['Song']:
+        unique_songs0.append(s)
+    unique_songs = list(set(unique_songs0))
 
-    for song in df_bb100['Song']:
-
+    # download lyrics for unique songs only (avoids duplicate dls)
+    for song in unique_songs:
         # search for song via Genius API
         query = f'{song}'.replace(" ", "%20")
         # extract only alphanumeric chars and percent sign
