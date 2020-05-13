@@ -3,8 +3,11 @@ Interactive dashboard of popular songs' features with live data fetched from Bil
 
 -------------
 ## Try the App
-- Install new environemnt with requirements.txt
-- Run app_eda_live.py file
+You can visit https://bb100-app.herokuapp.com/ for a deployed version of the app
+
+To run with the latest song data on local machine, download all files. Then,
+- Install Python packages in requirements.txt
+- Run `python app_eda_live.py`
 
 ---
 
