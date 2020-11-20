@@ -1,4 +1,4 @@
-# Spotify Visualization of Billboard Hot 100 Songs
+# Spotify Visualization of Billboard Top 100 Songs
 
 Interactive dashboard of popular songs' features with live data fetched from Billboard Top 100 Songs, Spotify, and Genius
 
