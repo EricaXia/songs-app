@@ -1,8 +1,9 @@
-# Songs App
+# Spotify Visualization of Billboard Hot 100 Songs - Dash App
 Interactive dashboard of popular songs' features with live data fetched from Billboard Top 100 Songs, Spotify, and Genius
 
 ![App Dashboard](https://github.com/EricaXia/songs-app/raw/master/interactive-app.png)
 
+Created using Python (Dash library)
 -------------
 ## Try the App
 You can visit https://bb100-app.herokuapp.com/ for a deployed version of the app
