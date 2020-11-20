@@ -1,7 +1,7 @@
 # Songs App
 Interactive dashboard of popular songs' features with live data fetched from Billboard Top 100 Songs, Spotify, and Genius
 
-![App Dashboard](https://octodex.github.com/images/yaktocat.png)
+![App Dashboard](https://github.com/EricaXia/songs-app/raw/master/interactive-app.png)
 
 -------------
 ## Try the App
