@@ -1,6 +1,8 @@
 # Songs App
 Interactive dashboard of popular songs' features with live data fetched from Billboard Top 100 Songs, Spotify, and Genius
 
+![App Dashboard](https://octodex.github.com/images/yaktocat.png)
+
 -------------
 ## Try the App
 You can visit https://bb100-app.herokuapp.com/ for a deployed version of the app
