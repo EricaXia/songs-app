@@ -8,7 +8,7 @@ Created using Python (Dash library)
 
 
 ## Try the App
-You can visit https://bb100-app.herokuapp.com/ for a deployed version of the app
+~~You can visit https://bb100-app.herokuapp.com/ for a deployed version of the app~~
 
 To run with the latest song data on local machine, download all files. Then,
 - Install Python packages in requirements.txt
